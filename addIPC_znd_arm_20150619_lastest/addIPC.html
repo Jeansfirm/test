@@ -1,0 +1,44 @@
+<!--pass.html-->
+<html>
+<head><title>addipc</title></head>
+<!-- 中文输出显示--->
+<!-- <meta http-equiv="content-type" content="text/html; charset=gb2312" /> -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<body>
+<!--下面的action是表单提交后在服务器端执行的gic程序（即c的可执行程序）-->
+<!--cgi可执行程序放在 /usr/lib/cgi-bin/目录下-->
+<form name="form1" action="/cgi-bin/rest/network/addIPC.cgi" method="POST">
+<table align="center">
+    <tr><td align="center" colspan="2"></td></tr>
+    <tr>
+       <td align="right">ipaddr</td>
+       <td><input type="text" name="ipaddr"></td>
+    </tr>
+    <tr>
+       <td align="right">rtspport</td>
+       <td><input type="text" name="rtspport"></td>
+    </tr>
+    <tr>
+       <td align="right">httpport</td>
+       <td><input type="text" name="httpport"></td>
+    </tr>
+    <tr>
+        <td align="right">name</td>
+        <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+        <td align="right">password</td>
+        <td><input type="text" name="password"></td>
+    </tr>
+    <tr>
+        <td align="right">aliases</td>
+        <td><input type="text" name="alias"></td>
+    </tr>
+    <tr>
+       <td align="right"><input type="submit" value="login"></td>
+       <td align="right"><input type="reset" value="cancel"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
